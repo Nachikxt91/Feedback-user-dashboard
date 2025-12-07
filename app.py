@@ -249,7 +249,7 @@ if submit_button:
         with st.spinner("Sending your feedback to the AI engine..."):
             try:
                 response = requests.post(
-                    f"{API_URL}/feedback/",
+                    f"{API_URL}/feedback",
                     json={"rating": st.session_state.rating, "review": review},
                     timeout=30,
                 )
