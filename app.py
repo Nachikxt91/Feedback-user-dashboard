@@ -9,6 +9,14 @@ try:
     API_URL = st.secrets["API_URL"]
 except (KeyError, FileNotFoundError):
     API_URL = os.getenv("API_URL", "http://localhost:8000/api")
+st.write(f"🔍 DEBUG: API_URL = {API_URL}")
+st.write(f"🔍 DEBUG: Full endpoint will be = {API_URL}/feedback")
+
+st.set_page_config(
+    page_title="Feedback System",
+    page_icon="⭐",
+    layout="centered"
+)
 
 st.set_page_config(
     page_title="Feedback System",
