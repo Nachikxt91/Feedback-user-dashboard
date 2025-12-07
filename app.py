@@ -16,8 +16,6 @@ st.set_page_config(
     layout="centered"
 )
 
-st.write(f"🔍 DEBUG: API_URL = {API_URL}")
-st.write(f"🔍 DEBUG: Full endpoint will be = {API_URL}/feedback")
 
 st.markdown(
     """
